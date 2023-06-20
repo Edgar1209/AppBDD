@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfo"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:id="@+id/holaUser"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Hola Usuario"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/perdidosUser"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/mypetsUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lost" />
+
+    <ImageView
+        android:id="@+id/mypetsUser"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/holaUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mypets" />
+
+    <ImageView
+        android:id="@+id/adopcionUser"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/perdidosUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adopt" />
+
+    <ImageView
+        android:id="@+id/userUser"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adopcionUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <Button
+        android:id="@+id/UserContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="176dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Cambiar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/UserMaterno"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserPaterno" />
+
+    <EditText
+        android:id="@+id/UserPaterno"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Apellido Paterno"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserNombre" />
+
+    <EditText
+        android:id="@+id/UserNombre"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Nombre "
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holaUser" />
+
+    <EditText
+        android:id="@+id/UserTelefono"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserMail" />
+
+    <EditText
+        android:id="@+id/UserContraseña"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserMaterno" />
+
+    <EditText
+        android:id="@+id/UserMail"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#636363"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserContraseña" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

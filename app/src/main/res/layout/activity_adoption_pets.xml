@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdoptionPets"
+    android:background="@drawable/bg1">
+
+    <ListView
+        android:id="@+id/listaAdoption"
+        android:layout_width="409dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/holaAdoption"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Hola Usuario"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/perdidosAdoption"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/mypetsAdoption"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lost" />
+
+    <ImageView
+        android:id="@+id/mypetsAdoption"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/holaAdoption"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mypets" />
+
+    <ImageView
+        android:id="@+id/adopcionAdoption"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/perdidosAdoption"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adopt" />
+
+    <ImageView
+        android:id="@+id/userAdoption"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adopcionAdoption"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
